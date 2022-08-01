@@ -10,7 +10,7 @@
             <div class="grip"></div>
         </div>
         <div class="body" v-show="showMovements">
-
+            <slot name="movements"></slot>
         </div>
     </div>
 </template>
