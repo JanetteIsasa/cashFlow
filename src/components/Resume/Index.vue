@@ -70,14 +70,25 @@ h1 {
 }
 p{
     font-size: 1.1rem;
+    padding-top: 0.5rem;
     
 }
 .graphic {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 48px 24px;
+  padding: 24px;
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+    p{
+        font-size: 1.5rem;
+    }
+  h1{
+    font-size: 3.5rem;
+  }
 }
 </style>

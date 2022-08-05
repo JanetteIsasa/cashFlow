@@ -48,4 +48,11 @@ const remove = (id) => {
   gap: 8px;
   overflow-y: scroll;
 }
+
+@media screen and (min-width: 600px) {
+ .content {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+}
 </style>

@@ -1,37 +1,12 @@
 <template>
-    <div>
-        <svg
-            @touchstart="tap"
-            @touchmove="tap"
-            @touchend="untap"
-            viewBox="0 0 300 200"
-        >
-            <line
-                stroke="#fff"
-                stroke-width="2"
-                x1="0"
-                :y1="zero"
-                x2="300"
-                :y2="zero"
-            />
-            <polyline
-                fill="none"
-                stroke="#4d7d91"
-                stroke-width="2"
-                :points="points"
-            />
-            <line
-                v-show="showPointer"
-                stroke="#fd844b"
-                stroke-width="2"
-                :x1="pointer"
-                y1="0"
-                :x2="pointer"
-                y2="200"
-            />
-        </svg>
-        <p>Últimos 30 días</p>
-    </div>
+
+    <svg @touchstart="tap" @touchmove="tap" @touchend="untap" viewBox="0 0 300 200">
+        <line stroke="#fff" stroke-width="2" x1="0" :y1="zero" x2="300" :y2="zero" />
+        <polyline fill="none" stroke="#e5ecf4" stroke-width="2" :points="points" />
+        <line v-show="showPointer" stroke="#fd844b" stroke-width="2" :x1="pointer" y1="0" :x2="pointer" y2="200" />
+    </svg>
+    <p>Últimos 30 días</p>
+
 </template>
 
 <script setup>
@@ -83,16 +58,21 @@ const untap = () => {
 
 <style scoped>
 svg {
-  width: 100%;
-  padding: 1.8rem 1.5rem;
-   
-    background-color: var(--brand-celeste-claro);
+    width: 80%;
+    padding: 1.8rem 1.5rem;
     box-sizing: border-box;
     border-radius: 20px;
 }
 
 p {
-  text-align: center;
-  color: var(--brand-celeste-claro2);
+    text-align: center;
+    color: var(--brand-celeste-claro2);
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+   p{
+    font-size: 1.5rem;
+   }
 }
 </style>

@@ -83,6 +83,14 @@ h4 {
     color: red;
 }
 .green {
-    color:green;
+    color:black;
+}
+
+@media screen and (min-width: 600px) {
+ .movement {
+  
+  width: 49%;
+ 
+}
 }
 </style>

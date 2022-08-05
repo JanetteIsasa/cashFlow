@@ -15,7 +15,11 @@
   height: 100vh;
 }
 h1 {
-  color: white;
+  color: var(--brand-naranja);
+  text-shadow: 2px 2px 4px #000000;
+}
+h1 span{
+  color: var(--brand-celeste-claro2);
 }
 
 </style>

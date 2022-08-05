@@ -1,5 +1,6 @@
 <template>
   <div class="modal">
+    <div class="modal-contenido">
     <div class="head">
       <p>Nuevo movimiento</p>
       <img @click="close" src="@/assets/close-icon.svg" alt="cerrar" />
@@ -8,6 +9,8 @@
       <slot></slot>
     </div>
   </div>
+  </div>
+  
 </template>
 
 <script setup>
@@ -17,7 +20,7 @@ const close = () => emit("close");
 </script>
 
 <style scoped>
-.modal {
+.modal-contenido {
   z-index: 2;
   position: absolute;
   left: 0;
@@ -40,5 +43,24 @@ p {
   font-size: 1.5rem;
   color: var(--brand-celeste);
   font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+   .modal-contenido{
+    width:500px;
+    padding: 10px 20px;
+    padding-bottom: 30px;
+    margin: 20% auto;
+    height: max-content;
+   }
+
+  .modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;  
+}
 }
 </style>

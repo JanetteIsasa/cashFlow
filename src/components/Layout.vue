@@ -33,6 +33,8 @@ const showMovements = ref(false);
 .header {
   position: fixed;
   width: 100vw;
+  border-bottom: 1px solid white;
+  background-color: #305a6c;
 }
 .resume {
   min-height: 100vh;
@@ -45,13 +47,13 @@ const showMovements = ref(false);
   width: 100vw;
   background-color: var(--brand-celeste-claro2);
   box-shadow: 0 -1px 12px var(--brand-celeste-claro);
-  border-radius: 24px;
+  border-radius: 24px 24px 0 0;
 }
 .movements .head {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 15px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -65,4 +67,7 @@ const showMovements = ref(false);
   background-color: var(--brand-celeste);
   border-radius: 4px;
 }
+
+
+
 </style>

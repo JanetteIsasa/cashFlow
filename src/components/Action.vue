@@ -65,7 +65,7 @@ button {
   font-size: 1.25rem;
   background-color: var(--brand-naranja);
   width: 100%;
-  padding: 20px 55px;
+  padding: 15px 55px;
   border-radius: 60px;
   box-sizing: border-box;
 }
