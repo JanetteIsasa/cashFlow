@@ -7,7 +7,7 @@
             viewBox="0 0 300 200"
         >
             <line
-                stroke="#c4c4c4"
+                stroke="#fff"
                 stroke-width="2"
                 x1="0"
                 :y1="zero"
@@ -16,13 +16,13 @@
             />
             <polyline
                 fill="none"
-                stroke="#0689B0"
+                stroke="#4d7d91"
                 stroke-width="2"
                 :points="points"
             />
             <line
                 v-show="showPointer"
-                stroke="#04b500"
+                stroke="#fd844b"
                 stroke-width="2"
                 :x1="pointer"
                 y1="0"
@@ -84,8 +84,15 @@ const untap = () => {
 <style scoped>
 svg {
   width: 100%;
+  padding: 1.8rem 1.5rem;
+   
+    background-color: var(--brand-celeste-claro);
+    box-sizing: border-box;
+    border-radius: 20px;
 }
+
 p {
   text-align: center;
+  color: var(--brand-celeste-claro2);
 }
 </style>

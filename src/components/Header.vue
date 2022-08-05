@@ -29,9 +29,7 @@ span {
 }
 h1 {
   font-size: 1.4rem;
-  color: var(--brand-blue);
+   color: white;
 }
-h1 span {
-  color: var(--brand-green);
-}
+
 </style>

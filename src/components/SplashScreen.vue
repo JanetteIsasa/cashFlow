@@ -15,9 +15,7 @@
   height: 100vh;
 }
 h1 {
-  color: var(--brand-blue);
+  color: white;
 }
-h1 span {
-  color: var(--brand-green);
-}
+
 </style>

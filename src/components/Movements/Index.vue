@@ -39,7 +39,7 @@ const remove = (id) => {
 }
 .title {
   margin: 8px 16px 24px 16px;
-  color: var(--brand-blue);
+  color: var(--brand-celeste);
 }
 .content {
   max-height: 68vh;

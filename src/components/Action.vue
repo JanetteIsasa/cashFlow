@@ -61,14 +61,16 @@ const submit = () => {
 <style scoped>
 button {
   color: white;
-  font-size: 1.25rem;
-  background-color: var(--brand-blue);
   border: none;
+  font-size: 1.25rem;
+  background-color: var(--brand-naranja);
   width: 100%;
-  padding: 24px 60px;
+  padding: 20px 55px;
   border-radius: 60px;
   box-sizing: border-box;
 }
+
+
 form {
   font-size: 1.24rem;
   width: 100%;
@@ -84,11 +86,12 @@ form .action {
 }
 label {
   margin-bottom: 8px;
+  color: var(--brand-azul-oscuro);
 }
 input,
 textarea {
   font-size: 1.24rem;
-  border: 2px solid var(--brand-blue);
+  border: 2px solid var(--brand-celeste);
   border-radius: 8px;
   padding: 8px;
 }
@@ -108,11 +111,11 @@ input[type="radio"] {
   appearance: none;
   width: 1.24rem;
   height: 1.24rem;
-  color: var(--brand-blue);
-  border: 2px solid var(--brand-blue);
+  color: var(--azul-oscuro);
+  border: 2px solid var(--brand-celeste);
   border-radius: 50%;
 }
 input[type="radio"]:checked {
-  background-color: var(--brand-blue);
+  background-color: var(--brand-celeste);
 }
 </style>

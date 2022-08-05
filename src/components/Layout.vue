@@ -43,8 +43,8 @@ const showMovements = ref(false);
   flex-direction: column;
   bottom: 0;
   width: 100vw;
-  background-color: white;
-  box-shadow: 0 -8px 16px #e5e5e5;
+  background-color: var(--brand-celeste-claro2);
+  box-shadow: 0 -1px 12px var(--brand-celeste-claro);
   border-radius: 24px;
 }
 .movements .head {
@@ -62,7 +62,7 @@ const showMovements = ref(false);
 .movements .head .grip {
   width: 120px;
   height: 8px;
-  background-color: #e5e5e5;
+  background-color: var(--brand-celeste);
   border-radius: 4px;
 }
 </style>

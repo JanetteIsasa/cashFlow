@@ -62,10 +62,15 @@ h1,
 p {
   margin: 0;
   text-align: center;
+  color: white;
 }
 h1 {
   margin-top: 14px;
-  color: var(--brand-green);
+  color: var(--brand-celeste-claro2);
+}
+p{
+    font-size: 1.1rem;
+    
 }
 .graphic {
   display: flex;

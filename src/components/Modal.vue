@@ -24,7 +24,7 @@ const close = () => emit("close");
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: white;
+  background-color: var(--brand-celeste-claro2);
 }
 .head {
   display: flex;
@@ -33,10 +33,12 @@ const close = () => emit("close");
   width: 100%;
   padding: 24px 24px;
   box-sizing: border-box;
+  
 }
 p {
   margin: 0;
   font-size: 1.5rem;
-  color: var(--brand-blue);
+  color: var(--brand-celeste);
+  font-weight: bold;
 }
 </style>

@@ -52,12 +52,13 @@ const remove = () => {
   align-items: center;
   width: 100%;
   padding: 16px;
-  background-color: #e6f9ff;
+  background-color: #fff;
   border-radius: 8px;
   box-sizing: border-box;
 }
 .movement .content {
   width: 100%;
+  margin-right: 0.5rem;
 }
 .movement .action {
   display: flex;
@@ -69,9 +70,11 @@ h4,
 p {
   margin: 0;
   padding: 0;
+  color: var(--brand-azul-oscuro);
 }
 h4 {
   margin-bottom: 8px;
+  color: #0b0b23ae;
 }
 .movement .action img {
   margin-bottom: 16px;
@@ -80,6 +83,6 @@ h4 {
     color: red;
 }
 .green {
-    color: green;
+    color:green;
 }
 </style>
